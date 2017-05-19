@@ -11,7 +11,8 @@ from parse import parse
 def visualize_days():
     """Visualize data by day of the week"""
 
-    #graph our parsed data
+    #grab our parsed data
+
 
     #make a new variable, 'counter', from iterating through each
     #line of data in the parsed data, and count how many incidents
