@@ -6,7 +6,7 @@ from collections import Counter
 import matplotlib.pyplot as plt
 import numpy as np
 
-from parse import parse
+import parse
 
 def visualize_days():
     """Visualize data by day of the week"""
