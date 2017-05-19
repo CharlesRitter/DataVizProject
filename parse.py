@@ -3,7 +3,7 @@
 
 import csv
 
-My_FILE = "sample_sfpd_incident_all.csv"
+MY_FILE = "sample_sfpd_incident_all.csv"
 
 def parse(raw_file, delimiter):
     """Parses a raw CSV file to a JSON-line object."""
@@ -12,7 +12,7 @@ def parse(raw_file, delimiter):
     opened_file = open(raw_file)
 
     #Read CSV file
-    csv_data = csv.reader(opened_file, delimiter=delimeter)
+    csv_data = csv.reader(opened_file, delimiter=delimiter)
 
     #Setup an empty list
     parsed_data = []
@@ -28,3 +28,13 @@ def parse(raw_file, delimiter):
     opened_file.close()
 
     return parsed_data
+
+def main():
+    #Call our parse function and give it the needed parameters
+    new_data = parse(MY_FILE, ",")
+
+    #prints the Data
+    print new_data
+
+if __name__ == "__main__":
+    main()
