@@ -25,7 +25,6 @@ def visualize_days():
     #incidents for each day)
 
     #data
->>>>>>> function2
     data_list = [
     counter["Monday"],
     counter["Tuesday"],
