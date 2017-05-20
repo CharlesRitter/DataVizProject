@@ -34,13 +34,20 @@ def visualize_days():
     day_tuple = tuple(["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"])
 
     #with that y-axis data, assign it to a matplotlib instance
+    plt.plot(data_list)
 
-    #create the amount of ticks needed fo rour x-axis, and assign
+    #create the amount of ticks needed for our x-axis, and assign
     #the labels
+    plt.xticks(range(len(day_tuple)), day_tuple)
 
-    #save the plot!
+    #title the plot
+    plt.title("The number of incidents occurring on each day of the week")
+
+    #display the plot
+    plt.show()
 
     #close the plot
+    plt.clf()
 
 def main():
     visualize_days()
