@@ -9,6 +9,7 @@ import numpy as np
 import parse
 
 def visualize_days():
+
     """Visualize data by day of the week in a line graph"""
 
     #grab our parsed data
@@ -22,8 +23,11 @@ def visualize_days():
     #separate the x-axis data (the days of the week) from the
     #'counter' variable form the y-axis data (the number of)
     #incidents for each day)
+<<<<<<< HEAD
+=======
 
     #data
+>>>>>>> function2
     data_list = [
     counter["Monday"],
     counter["Tuesday"],
