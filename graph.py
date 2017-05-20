@@ -23,8 +23,6 @@ def visualize_days():
     #separate the x-axis data (the days of the week) from the
     #'counter' variable form the y-axis data (the number of)
     #incidents for each day)
-<<<<<<< HEAD
-=======
 
     #data
 >>>>>>> function2
