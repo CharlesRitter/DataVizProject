@@ -4,6 +4,11 @@
 import csv
 import sys
 
+if len(sys.argv) != 2:
+    print("Error: wrong number of arguments")
+    print("Usage: python *.py YOURFILE.csv")
+    sys.exit()
+
 def parse(raw_file, delimiter):
     """Parses a raw CSV file to a JSON-line object."""
 
@@ -30,7 +35,7 @@ def parse(raw_file, delimiter):
 
 def main():
     """Usage: python parse.py YOURFILE.csv"""
-    
+
     #opens the file from the cmd line argument
     MY_FILE = sys.argv[1]
 
