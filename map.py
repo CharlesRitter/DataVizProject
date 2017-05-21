@@ -56,3 +56,10 @@ def create_map(data_file):
     # can upload it to gist.github.com
     with open('file_sf.geojson', 'w') as f:
         f.write(geojson.dumps(geo_map))
+
+def main():
+    data = p.parse(p.MY_FILE, ",")
+    return create_map(data)
+
+if __name__ == "__main__":
+    main()
