@@ -27,7 +27,7 @@ def create_map(data_file):
 
         # Skip any zero coordinates as this will throw off
         # our map.
-        if line['X'] == "0" or line ['Y'] == "0"]:
+        if line['X'] == "0" or line ['Y'] == "0":
             continue
 
         # Setup a new dictionary for each iteration.
