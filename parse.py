@@ -2,8 +2,7 @@
 #Charles Ritter 2017
 
 import csv
-
-MY_FILE = "sample_sfpd_incident_all.csv"
+import sys
 
 def parse(raw_file, delimiter):
     """Parses a raw CSV file to a JSON-line object."""
@@ -30,6 +29,11 @@ def parse(raw_file, delimiter):
     return parsed_data
 
 def main():
+    """Usage: python parse.py YOURFILE.csv"""
+    
+    #opens the file from the cmd line argument
+    MY_FILE = sys.argv[1]
+
     #Call our parse function and give it the needed parameters
     new_data = parse(MY_FILE, ",")
 
