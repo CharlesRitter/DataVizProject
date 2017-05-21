@@ -13,7 +13,7 @@ def visualize_days():
     """Visualize data by day of the week in a line graph"""
 
     #grab our parsed data
-    data_file = parse.parse(parse.MY_FILE, ",")
+    data_file = parse.parse(parse.sys.argv[1], ",")
 
     #make a new variable, 'counter', from iterating through each
     #line of data in the parsed data, and count how many incidents
@@ -57,7 +57,7 @@ def visualize_type():
     """Visualize data by category in a bar graph"""
 
     # grab our parsed data
-    data_file = parse.parse(parse.MY_FILE, ",")
+    data_file = parse.parse(parse.sys.argv[1], ",")
 
     # make a new variable, 'counter', from iterating through each line
     # of data in the parsed data, and count how many incidents happen
